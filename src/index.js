@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+// const greeting = <h1>hello world</h1>
+const greeting = React.createElement('h1',{},'hello world');
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  greeting,
   document.getElementById('root')
 );
 
